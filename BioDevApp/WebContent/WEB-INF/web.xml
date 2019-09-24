@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>BioDevApp</display-name>
+ 
+   <servlet>
+    <servlet-name>BioDev</servlet-name>
+    <servlet-class>com.sdzee.servlets.BioDev</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BioDev</servlet-name>
+    <url-pattern>/BioDev</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>dashboard</servlet-name>
+    <servlet-class>com.sdzee.servlets.dashboard</servlet-class>
+   <multipart-config>
+      <location>C:/</location>
+      <max-file-size>10485760</max-file-size>
+      <max-request-size>52428800</max-request-size>
+      <file-size-threshold>10485760</file-size-threshold>
+    </multipart-config>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>dashboard</servlet-name>
+    <url-pattern>/dashboardAccueil</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>test</servlet-name>
+    <servlet-class>com.octest.servlets.test</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>test</servlet-name>
+    <url-pattern>/bonjour</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>rgfaune</servlet-name>
+    <servlet-class>RGFaune.rgfaune</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>rgfaune</servlet-name>
+    <url-pattern>/rg</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>embranchement</servlet-name>
+    <servlet-class>RGFaune.embranchement</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>embranchement</servlet-name>
+    <url-pattern>/emb</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ctafaune</servlet-name>
+    <servlet-class>RGFaune.ctafaune</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ctafaune</servlet-name>
+    <url-pattern>/cta</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AjouterRG</servlet-name>
+    <servlet-class>RGFaune.AjouterRG</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AjouterRG</servlet-name>
+    <url-pattern>/ajt</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>AjouterCTA</servlet-name>
+    <servlet-class>RGFaune.AjouterCTA</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AjouterCTA</servlet-name>
+    <url-pattern>/ajtc</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>annélide</servlet-name>
+    <servlet-class>RGFaune.annélide</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>annélide</servlet-name>
+    <url-pattern>/anl</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>arthropode</servlet-name>
+    <servlet-class>RGFaune.arthropode</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>arthropode</servlet-name>
+    <url-pattern>/art</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>bovidésVache</servlet-name>
+    <servlet-class>RGFaune.bovidésVache</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>bovidésVache</servlet-name>
+    <url-pattern>/vache</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>ClasseVertébrés</servlet-name>
+    <servlet-class>RGFaune.ClasseVertébrés</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ClasseVertébrés</servlet-name>
+    <url-pattern>/cvert</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+    <servlet-name>cnidaire</servlet-name>
+    <servlet-class>RGFaune.cnidaire</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>cnidaire</servlet-name>
+    <url-pattern>/cni</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CTAMouton</servlet-name>
+    <servlet-class>RGFaune.CTAMouton</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CTAMouton</servlet-name>
+    <url-pattern>/ctam</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CTAVache</servlet-name>
+    <servlet-class>RGFaune.CTAVache</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CTAVache</servlet-name>
+    <url-pattern>/ctav</url-pattern>
+  </servlet-mapping>
+    
+  <servlet>
+    <servlet-name>familleCétardioctyles</servlet-name>
+    <servlet-class>RGFaune.familleCétardioctyles</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>familleCétardioctyles</servlet-name>
+    <url-pattern>/famc</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>mollusque</servlet-name>
+    <servlet-class>RGFaune.mollusque</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>mollusque</servlet-name>
+    <url-pattern>/moll</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>OrdreMammifères</servlet-name>
+    <servlet-class>RGFaune.OrdreMammifères</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrdreMammifères</servlet-name>
+    <url-pattern>/ordm</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>vertébré</servlet-name>
+    <servlet-class>RGFaune.vertébré</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>vertébré</servlet-name>
+    <url-pattern>/vert</url-pattern>
+  </servlet-mapping>
+    <jsp-config>
+    <jsp-property-group>
+      <url-pattern>*.jsp</url-pattern>
+      <include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
+    </jsp-property-group>
+  </jsp-config>
+  
+  <listener>
+    <listener-class>com.sdzee.config.InitialisationDaoFactory</listener-class>
+  </listener>
+   <filter>
+    <filter-name>Set Character Encoding</filter-name>
+    <filter-class>org.apache.catalina.filters.SetCharacterEncodingFilter</filter-class>
+    <init-param>
+        <param-name>encoding</param-name>
+        <param-value>UTF-8</param-value>
+    </init-param>
+    <init-param>
+        <param-name>ignore</param-name>
+        <param-value>false</param-value>
+    </init-param>
+</filter>
+<filter-mapping>
+    <filter-name>Set Character Encoding</filter-name>
+    <url-pattern>/*</url-pattern>
+</filter-mapping>
+</web-app>

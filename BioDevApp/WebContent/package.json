@@ -1,0 +1,17 @@
+{
+  "name": "webcontent",
+  "version": "1.0.0",
+  "description": "description",
+  "main": "index.js",
+  "scripts": {
+    "test": "ls"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "boostrap": "^2.0.0",
+    "bootstrap": "^3.4.1",
+    "jquery": "^3.4.1",
+    "moment": "^2.24.0"
+  }
+}
