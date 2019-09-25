@@ -79,7 +79,7 @@
               RG
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="property-single.html">Marine</a>
+              <a class="dropdown-item" href="StartRGMarines">Marine</a>
               <a class="dropdown-item" href="rgfaune">Faunistique</a>
               <a class="dropdown-item" href="/BioDevApp/classifications">Phytogénétique</a>
               <a class="dropdown-item" href="MicroOrganismes">Micro organisme</a>
@@ -103,7 +103,7 @@
             <a class="nav-link" href="property-grid.html">Annuaire</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="blog-grid.html">Réglementation</a>
+            <a class="nav-link" href="regleumentation">Réglementation</a>
           </li>
          
           <li class="nav-item">

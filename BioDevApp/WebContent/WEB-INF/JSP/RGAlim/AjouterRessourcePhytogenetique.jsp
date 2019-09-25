@@ -45,7 +45,13 @@
     <c:if test="${isConnected}">
       <%@include file="/WEB-INF/JSP/RGAlim/NavCnx.jsp" %>
     </c:if>
-      <section id="team" class="pb-5 intro-single" style="padding-top: 0px; ">
+ 
+
+    <div class="container">
+    <div id="content-wrapper" class="d-flex flex-column" >
+      <div id="content" >
+        <div class="container-fluid">
+        	    <section id="team" class="pb-5 intro-single" style="padding-top: 0px; ">
        <c:if test="${isAdded}">
         <div class="alert alert-success alert-dismissible" role="alert">
          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -54,11 +60,7 @@
           La ressource a bien été ajouté
         </div>
     </c:if>
-    <div class="container">
-    <div id="content-wrapper" class="d-flex flex-column" >
-      <div id="content" >
-        <div class="container-fluid">
-  	<form  class="text-center border border-light p-5 form-a" action="#!" method="post" id="form">
+  	<form  class="text-center border border-light p-5 form-a" action="#!" method="post" id="form"   >
   		<p class="h4 mb-4">Ajouter une Ressource Phytogenetique</p>
   		<div class="form-row mb-4">
         <div class="col">
@@ -496,6 +498,13 @@
   <script src="dependencies/admin/js/demo/chart-area-demo.js"></script>
   <script src="dependencies/admin/js/demo/chart-pie-demo.js"></script>
   </div>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
    <%@include file="/WEB-INF/JSP/RGFaune/footer.jsp" %>
 </body>
 </html>

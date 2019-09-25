@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.StringTokenizer;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
@@ -41,17 +42,20 @@ public class ClassificationDAOImp {
 	}
 	public String getLevelAncestorsName (String level){
 		Map<Integer,Rgclassification> tmp = new HashMap<Integer,Rgclassification>();
+		int i=0;
 		Rgclassification level1 = trouverRgclassification(level);
 		//if (level1 == null)System.out.println("null");
 		//System.out.println(level1.getParentPath());
 		List <Rgclassification> list = getAncetre(level1.getParentPath());
 		Collections.sort(list,new sortById());
 		String levelAncestors = "";
-		for (int i=0;i<list.size();i++) {
-			levelAncestors = levelAncestors + list.get(i).getNomNiveau() + "/";
-			System.out.println(list.get(i).getParentPath());
-			}
-		System.out.println(levelAncestors);
+		StringTokenizer st = new StringTokenizer(level1.getParentPath(),".");   
+	     while (st.hasMoreTokens() && i<list.size()) {  
+	    	 levelAncestors = levelAncestors + st.nextToken() + "/"; 
+	    	 i++;
+	     }  
+	    levelAncestors =  levelAncestors.substring(0, levelAncestors.length()-1);
+		//System.out.println(levelAncestors);
 		return levelAncestors; 
 	}
 	public List<String> findLevelByName (String level){

@@ -61,10 +61,10 @@
               RG
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="property-single.html">Marine</a>
+              <a class="dropdown-item" href="StartRGMarines">Marine</a>
               <a class="dropdown-item" href="/BioDevApp/rgfaune">Faunistique</a>
               <a class="dropdown-item" href="/BioDevApp/classifications">Phytogénétique</a>
-              <a class="dropdown-item" href="agent-single.html">Micro organisme</a>
+              <a class="dropdown-item" href="MicroOrganismes">Micro organisme</a>
               <a class="dropdown-item" href="agent-single.html">Forestière</a>
             </div>
           </li>
@@ -75,17 +75,17 @@
           </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="property-single.html">Marine</a>
-              <a class="dropdown-item" href="ctafaune.html">Faunistique</a>
-              <a class="dropdown-item" href="agents-grid.html">PhylogÃ©nÃ©tique</a>
-              <a class="dropdown-item" href="agent-single.html">Micro organisme</a>
-              <a class="dropdown-item" href="agent-single.html">ForestiÃ¨re</a>
+              <a class="dropdown-item" href="/BioDevApp/ctafaune">Faunistique</a>
+              <a class="dropdown-item" href="agents-grid.html">Phytogénétique</a>
+              <a class="dropdown-item" href="CTAMicroM">Micro organisme</a>
+              <a class="dropdown-item" href="agent-single.html">Forestière</a>
             </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="property-grid.html">Annuaire</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="blog-grid.html">Réglementation</a>
+            <a class="nav-link" href="reglementation">Réglementation</a>
           </li>
          
           <li class="nav-item">

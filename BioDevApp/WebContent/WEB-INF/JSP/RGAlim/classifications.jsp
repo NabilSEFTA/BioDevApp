@@ -82,7 +82,7 @@
 
         <div class="row" style="margin-bottom: 5%;">
           <div class="col-lg-6 about-img wow fadeInLeft">
-            <img src="img/about-img.jpg" style="width: 508px;">
+            <img src="images/RGAlim/ressource.jpg" style="width: 508px;">
           </div>
 
           <div class="col-lg-6 content wow fadeInRight">
@@ -190,7 +190,7 @@
       <section id="intro" style="background: none; height: 50px;">
 
     <div class="intro-text">
-      <a href="#about" class="btn-get-started scrollto" style="margin: 0px;">Voir plus</a>
+      <a href="listerrg" class="btn-get-started scrollto" style="margin: 0px;">Voir plus</a>
     </div>
 
   </section><!-- #intro -->

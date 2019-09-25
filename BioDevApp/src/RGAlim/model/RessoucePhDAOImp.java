@@ -50,5 +50,13 @@ public class RessoucePhDAOImp {
 		else return null;
 		//System.out.println(list.get(0).getCourriel());
 	}
+	public List<RessourcePhytogenetique> listerRessourceAf () {
+		Query requete = entityManager.createQuery("select r from RessourcePhytogenetique r where r.validee = true");
+		List <RessourcePhytogenetique> list = requete.getResultList();
+		//System.out.println(list==null);
+		if (!list.isEmpty())return list;
+		else return null;
+		//System.out.println(list.get(0).getCourriel());
+	}
 
 }

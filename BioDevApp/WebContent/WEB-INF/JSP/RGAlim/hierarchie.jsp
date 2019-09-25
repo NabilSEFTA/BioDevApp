@@ -79,44 +79,26 @@
 </head>
 <body>
 <%@include file="/WEB-INF/JSP/RGAlim/Nav.jsp" %>
-	<!--<c:if test="${fn:length(list) == 0}">
-		<div class="card">
-  			<h4 class="card-title">Card title</h4>
-		    <p class="card-text">Some example text. Some example text.</p>
-		    <a href="#" class="card-link" >Card link</a>
-		</div>
-		<div class="card">
-  			<h4 class="card-title">Card title</h4>
-		    <p class="card-text">Some example text. Some example text.</p>
-		    <a href="#" class="card-link">Card link</a>
-		</div>
-	</c:if>-->
   <div id="wrapper" >
     <c:if test="${isConnected}">
-      
       <%@include file="/WEB-INF/JSP/RGAlim/NavCnx.jsp" %>
     </c:if>
     <div class="container">
-   <div id="content-wrapper" class="d-flex flex-column" >
-    <div id="content" >
-      <div class="container-fluid">
+      <div id="content-wrapper" class="d-flex flex-column" >
+        <div id="content" >
+        <div class="container-fluid">
          <div class="section-header" style="margin-bottom: 5%;">
           <h3 class="section-title">Description de Niveau</h3>
           <span class="section-divider"></span>
         </div>
-
         <div class="row" style="margin-bottom: 5%;">
           <div class="col-lg-6 about-img wow fadeInLeft">
-            <img src="img/about-img.jpg" style="width: 508px;">
+            <img src="images/RGAlim/${niveaurecu}.jpg" style="width: 508px;">
           </div>
-
           <div class="col-lg-6 content wow fadeInRight">
-       
             <p>
               ${description}
             </p>
-
-           
           </div>
         </div>
         <section id="portfolio"  class="section-bg" >
@@ -132,7 +114,7 @@
                 var text = document.getElementById('nomNiveau');
                 var path = document.getElementById('path');
                 text.innerHTML ="Niveau :" + " ${level.nomNiveau}" ;
-                path.innerHTML = path.innerHTML + " ${level.nomNiveau}";
+                
               </script>
             </c:if>
            <c:if test="${boucle.index % 3 == 0}">
@@ -143,7 +125,7 @@
          	    <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
                 <div class="portfolio-wrap">
                   <figure>
-                    <img src="dependencies/BizPage/img/plante.jpg" class="img-fluid" alt="">
+                    <img src="images/RGAlim/${niv}.jpg " class="img-fluid" alt="">
                     <a href="img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
                     <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                   </figure>
@@ -164,8 +146,6 @@
             </div>
           </c:if>
 	</c:forEach>
-	</div>
-	</div>
 </section>
 <script src="dependencies/admin/vendor/jquery/jquery.min.js"></script>
   <script src="dependencies/admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -210,5 +190,12 @@
 
   <!-- Template Main Javascript File -->
   <script src="dependencies/BizPage/js/main.js"></script>
+  </div>
+  </div>
+  </div>
+</div>
+</div>
+ 
+  <%@include file="/WEB-INF/JSP/RGAlim/footer.jsp" %>
 </body>
 </html>

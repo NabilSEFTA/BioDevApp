@@ -1,5 +1,6 @@
 package RGAlim.servlet;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +20,12 @@ import RGAlim.model.Ecosysteme_res_phyto;
 import RGAlim.model.RessoucePhDAOImp;
 import RGAlim.model.RessourcePhytogenetique;
 import RGAlim.model.Rgclassification;
+import RGAlim.model.Utilisateur;
+
+import org.apache.commons.fileupload.FileItem;
+import org.apache.commons.fileupload.disk.DiskFileItemFactory;
+import org.apache.commons.fileupload.servlet.ServletFileUpload;
+
 
 /** 
  * Servlet implementation class AjouterRessourcePhytogenetique
@@ -50,7 +57,10 @@ public class AjouterRessourcePhytogenetique extends HttpServlet {
 		boolean isConnected = false;
 		if (session.getAttribute(id)==null) {response.sendRedirect("/BioDevApp/connexion");}
 		
-		else{ClassificationDAOImp classificationDAOImp = new ClassificationDAOImp(em);
+		else{
+			Utilisateur user = (Utilisateur) session.getAttribute(id);
+			request.setAttribute("utilisateur",user );
+			ClassificationDAOImp classificationDAOImp = new ClassificationDAOImp(em);
 		List<String> listGenre = classificationDAOImp.findLevelByName("Genre");
 		List<String> listFamille = classificationDAOImp.findLevelByName("Famille_ph");
 		request.setAttribute("listGenre", listGenre);
@@ -70,6 +80,32 @@ public class AjouterRessourcePhytogenetique extends HttpServlet {
 		ClassificationDAOImp classificationDAOImp;
 		boolean isAdded = false;
 		try { 
+			
+			if(ServletFileUpload.isMultipartContent(request)){
+	            try {
+	            	System.out.println("there's an image");
+	                List <FileItem> multiparts = new ServletFileUpload(new DiskFileItemFactory()).parseRequest(request);
+	                for(FileItem item : multiparts){
+	                    if(!item.isFormField()){
+	                        String name = new File(item.getName()).getName();
+	                        System.out.println(name);
+	                        String path = getServletContext().getContextPath();
+	                        item.write( new File(getServletContext().getRealPath("../../../../../../../BioDevApp/images/RGAlim") + File.separator + name));
+	                        //System.out.println(getServletContext().getContextPath());
+	                    }
+	                }
+	               //File uploaded successfully
+	                System.out.println("success");
+	               request.setAttribute("gurumessage", "File Uploaded Successfully");
+	            } catch (Exception ex) {
+	               request.setAttribute("gurumessage", "File Upload Failed due to " + ex);
+	            }         		
+	        }else{
+	
+	            request.setAttribute("gurumessage","No File found");
+}
+	       // request.getRequestDispatcher("/result.jsp").forward(request, response);
+			
 			System.out.println("j'ysusi");
 			em.getTransaction().begin();
 			phDAOImp = new RessoucePhDAOImp(em);
@@ -77,7 +113,8 @@ public class AjouterRessourcePhytogenetique extends HttpServlet {
 			String genre = request.getParameter("genre");
 			String famille = request.getParameter("famille");
 			//String nomAr = request.getParameter("nomArabe");
-			System.out.println(genre); 
+			System.out.println("genre"+genre); 
+			System.out.println("famille"+famille);
 			Rgclassification rgclassificationGenre = classificationDAOImp.trouverRgclassification(genre);
 			System.out.println(rgclassificationGenre.getParentPath());
 			Rgclassification rgclassificationFamille = classificationDAOImp.trouverRgclassification(famille);

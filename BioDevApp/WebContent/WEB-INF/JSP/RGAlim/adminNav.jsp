@@ -30,7 +30,21 @@
           </div>
         </div>
       </li>
+      <hr class="sidebar-divider my-0">
 
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item active">
+        <a class="nav-link" href="dashboard"  data-toggle="collapse" data-target="#collapseUtilities4">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>La GED</span></a>
+        <div id="collapseUtilities4" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">GED</h6>
+            <a class="collapse-item" href="/BioDevApp/ged/viewFiles.jsp" >Afficher les Lois</a>
+            <a class="collapse-item" href="/BioDevApp/ajouterLoi" >Ajouter une Loi</a>
+          </div>
+        </div>
+      </li>
       <!-- Divider -->
       <hr class="sidebar-divider">
       <li class="nav-item active">

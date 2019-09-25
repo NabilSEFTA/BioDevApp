@@ -46,6 +46,7 @@ public class hierarchie extends HttpServlet {
 		boolean isConnected = true;
 		ClassificationDAOImp classificationDAOImp = null ;
 		try {
+			System.out.println("je suisdans try");
 			if (session.getAttribute(id)!=null)
 			request.setAttribute("isConnected", isConnected);
 			EntityManager em =ConnexionSimpleUser.getEntityManager(); 
@@ -55,10 +56,12 @@ public class hierarchie extends HttpServlet {
 			List <RessourcePhytogenetique> listph = new ArrayList<RessourcePhytogenetique>();
 			list = classificationDAOImp.trouverArbreRgclassifications(request.getParameter("niveau"));
 			Rgclassification rgclassification2 = classificationDAOImp.trouverRgclassification(request.getParameter("niveau"));
+			System.out.println("j'ai trouvé l'arbre");
 			levelAncestors = classificationDAOImp.getLevelAncestorsName(request.getParameter("niveau"));
 			request.setAttribute("levelAncestors", levelAncestors);
 			request.setAttribute("description", rgclassification2.getDescription());
 			request.setAttribute("list", list);
+			request.setAttribute("niveaurecu", request.getParameter("niveau"));
 			if (list == null) {
 				Rgclassification rgclassification = classificationDAOImp.trouverRgclassification(request.getParameter("niveau"));
 				System.out.println(rgclassification.getParentPath());
