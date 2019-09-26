@@ -65,7 +65,7 @@
           	</ul>
           </li>
           <li><a href="InstitutionsSer" onclick="" style ="font-weight: bold;font-size: 20px;">Annuaire</a></li>
-          <li><a href="#" onclick="document.getElementsByName('Reglementation')[0].click();" style ="font-weight: bold;font-size: 20px;">Réglementation</a></li>
+          <li><a href="/BioDevApp/ged/viewFiles.jsp"  style ="font-weight: bold;font-size: 20px;">Réglementation</a></li>
           
           
            
