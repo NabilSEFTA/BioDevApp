@@ -441,7 +441,7 @@
 				incurables et chroniques.
               </p>
               <div class="  cta-btn-container text-right" style="  width:300px;">
-	            <a class="cta-btn1" href="StartRGMarines" style="  margin-right:-150px;" onclick="document.getElementsByName('RG-marine')[0].click();">En savoir plus</a>
+	            <a class="cta-btn1" href="StartRGMarines" style="  margin-right:-150px;" >En savoir plus</a>
 	          </div>
             </div>
           </div>
@@ -486,7 +486,7 @@
           <div class="col-lg-8 text-center text-lg-left">
             <h3 class="cta-title">Conditions et réglementations nécessaires à l’émergence d’un marché portant sur des ressources génétiques.</h3>
             <h4 class="cta-text"> Il ya t'il une réglementation régissant l'exploitation de cette richesse ?</h4>
-            <div class="text-lg-right"><a class="cta-btn " href="#" onclick="document.getElementsByName('Reglementation')[0].click();">En savoir plus</a></div>
+            <div class="text-lg-right"><a class="cta-btn " href="/BioDevApp/ged/viewFiles.jsp" >En savoir plus</a></div>
             
           </div>
           
