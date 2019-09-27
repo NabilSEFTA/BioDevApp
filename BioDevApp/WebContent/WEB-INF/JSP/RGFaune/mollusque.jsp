@@ -85,7 +85,7 @@
                     </li>
                     <li class="d-flex justify-content-between">
                       <strong>Nom arabe:</strong>
-                      <span></span>
+                      <span>الرخويات</span>
                     </li>
                     <li class="d-flex justify-content-between">
                       <strong>Localisation:</strong>
@@ -114,9 +114,9 @@
               </div>
               <div class="property-description">
                 <p class="description color-text-a">
-               Les mollusques (Mollusca) sont un embranchement d'animaux Lophotrochozoaires. Ce sont des animaux non segmentés, à  symétrie bilatérale quelquefois altérée. Leur corps se compose généralement d'une tàªte, d'une masse viscérale, et d'un pied. La masse viscérale est recouverte en tout ou partie par un manteau, qui sécrète une coquille calcaire. Le système nerveux comprend un double collier périÅsophagien. La cavité générale est plus ou moins réduite au péricarde et aux néphridies. L'embranchement des mollusques (Mollusca) tire son nom du latin mollis, Â« mou Â». La science consacrée à  l'étude des mollusques est la malacologie, de l'équivalent grec malakia (Î¼Î±Î»Î¬ÎºÎ¹Î±), Â« mou Â».
+               Les mollusques (Mollusca) sont un embranchement d'animaux Lophotrochozoaires. Ce sont des animaux non segmentés, à  symétrie bilatérale quelquefois altérée. Leur corps se compose généralement d'une tàªte, d'une masse viscérale, et d'un pied. La masse viscérale est recouverte en tout ou partie par un manteau, qui sécrète une coquille calcaire. Le système nerveux comprend un double collier périœsophagien. La cavité générale est plus ou moins réduite au péricarde et aux néphridies. L'embranchement des mollusques (Mollusca) tire son nom du latin mollis, « mou ». La science consacrée à  l'étude des mollusques est la malacologie, de l'équivalent grec malakia (Î¼Î±Î»Î¬ÎºÎ¹Î±), « mou ».
 
-                Dans la classification phylogénétique, les mollusques sont des métazoaires triploblastiques cÅlomates (les termes Â« cÅlomate Â», Â« acÅlomate Â» et Â« pseudocÅlomate Â» ont récemment été retirés de la classification) bilatériens protostomiens ; les synapomorphies notables de ce clade étant la présence d'une radula et d'un manteau.
+                Dans la classification phylogénétique, les mollusques sont des métazoaires triploblastiques cœlomates (les termes « cœlomate », « acœlomate » et « pseudocœlomate » ont récemment été retirés de la classification) bilatériens protostomiens ; les synapomorphies notables de ce clade étant la présence d'une radula et d'un manteau.
 
                 L'embranchement contient plus de 70 600 espèces actuelles décrites mais on estime que quelques 15 000 espèces de mollusques marins restent non décrits à  ce jour. De plus on estime le nombre d'espèce fossile entre 60 000 et 100 000. Ils constituent avec les Chordés un des embranchements les plus diversifiés du règne animal, après les arthropodes, ces derniers regroupant, avec près d'1,5 million d'espèces recensées (on évalue le nombre d'espèces possibles dans une fourchette comprise entre 5 et 10 millions d'espèces possibles), plus de 80 % des espèces connues6.
 
@@ -128,13 +128,13 @@
                 <h3 class="title-d">Caractères généraux </h3>
                 </div>
                 <p class="description color-text-a no-margin">
-                  Malgré la grande diversité de formes, plusieurs caractères se retrouvent chez tous les mollusques actuels. La partie dorsale du corps est un manteau qui secrète des spicules calcaires, formant des sclérites, des plaques ou une coquille. Entre le manteau et la masse viscérale se trouve la cavité palléale qui contient les cténidies, les osphradies, les médridopores et au bout de laquelle laquelle débouchent l'anus et les conduits génitaux (gonopores). Le système nerveux est constitué d'un anneau nerveux autour de l'Åsophage avec au moins deux paires de cordons nerveux (trois chez les bivalves).
+                  Malgré la grande diversité de formes, plusieurs caractères se retrouvent chez tous les mollusques actuels. La partie dorsale du corps est un manteau qui secrète des spicules calcaires, formant des sclérites, des plaques ou une coquille. Entre le manteau et la masse viscérale se trouve la cavité palléale qui contient les cténidies, les osphradies, les médridopores et au bout de laquelle laquelle débouchent l'anus et les conduits génitaux (gonopores). Le système nerveux est constitué d'un anneau nerveux autour de l'œsophage avec au moins deux paires de cordons nerveux (trois chez les bivalves).
 
                   Les mollusques ont perdu toutes traces de métamérisation. Ils ont une symétrie bilatérale, mais qui peut àªtre altérée par une torsion du corps (Gastéropodes).
 
                   Leur tégument est mou. Il contient de nombreuses glandes qui sécrètent du mucus.
 
-                  Les mollusques sont des coelomates mais leur cÅlome se limite à  un péricarde, c'est-à -dire que le coeur est situé dans une cavité creusée dans du tissu dâorigine mésodermique et est composé d'un seul ventricule et de un ou plusieurs atriums. La cavité générale des mollusques est plus ou moins oblitérée par du tissu conjonctif, à  l'exception d'une partie qui enveloppe le cÅur (péricarde) et d'une autre partie, en relation avec les deux autres, qui constitue les organes excréteurs (néphridies).
+                  Les mollusques sont des coelomates mais leur cœlome se limite à  un péricarde, c'est-à -dire que le coeur est situé dans une cavité creusée dans du tissu d'origine mésodermique et est composé d'un seul ventricule et de un ou plusieurs atriums. La cavité générale des mollusques est plus ou moins oblitérée par du tissu conjonctif, à  l'exception d'une partie qui enveloppe le cœur (péricarde) et d'une autre partie, en relation avec les deux autres, qui constitue les organes excréteurs (néphridies).
                 </p>
               </div>
               <div class="row section-t3">
@@ -149,10 +149,10 @@
                   <p> Leur corps se subdivise en trois parties : </p>
                   <li>La tàªte qui contient les organes sensoriels et la bouche qui contient la radula et les odontophores (absents chez les bivalves).</li>
                   <li>Le pied ou sole pédieuse est un organe musculeux, typique des mollusques, destiné à  la locomotion. Il revàªt des formes très diverses suivant les espèces. Il est peu développé chez les aplacophores (Solénogastres et Caudofovéates) mais devient plus important chez les autres mollusques. Il forme la couronne de tentacules ou de bras qui permet la prédation chez les Céphalopodes.</li>
-                  <li>La masse viscérale, comme son nom l'indique, contient les viscères. Elle est contenue dans une mince tunique quâon appelle le manteau. Câest le manteau qui sécrète la coquille de la plupart des mollusques, qui leur sert de protection et/ou de squelette et/ou de régulateur de la flottaison (exemple de la seiche).</li>
+                  <li>La masse viscérale, comme son nom l'indique, contient les viscères. Elle est contenue dans une mince tunique qu'on appelle le manteau. C'est le manteau qui sécrète la coquille de la plupart des mollusques, qui leur sert de protection et/ou de squelette et/ou de régulateur de la flottaison (exemple de la seiche).</li>
 
                 </ul>
-                <p> Entre le manteau et la masse viscérale, le bourrelet palléal constitue une cavité palléale qui protège les organes respiratoires, et oà¹ débouchent les métanéphridies (organes excréteurs), lâintestin et les conduits génitaux. </p>
+                <p> Entre le manteau et la masse viscérale, le bourrelet palléal constitue une cavité palléale qui protège les organes respiratoires, et oà¹ débouchent les métanéphridies (organes excréteurs), l'intestin et les conduits génitaux. </p>
               </div>
 
 
@@ -202,8 +202,8 @@
               </div>
               <div class="amenities-list color-text-a">
              
-                  <p>La circulation est incomplète, lacunaire. Du cÅur partent de courtes artères mais il n'y a ni veines, ni capillaires. 
-                    Les Céphalopodes sont une exception parmi les mollusques et ont un système circulatoire clos avec un cÅur systémique et deux cÅurs branchiaux.
+                  <p>La circulation est incomplète, lacunaire. Du cœur partent de courtes artères mais il n'y a ni veines, ni capillaires. 
+                    Les Céphalopodes sont une exception parmi les mollusques et ont un système circulatoire clos avec un cœur systémique et deux cœurs branchiaux.
 
                     Le sang est incolore, ou légèrement coloré par de l'hémoglobine ou de l'hémocyanine dissoutes.</p>
                  
