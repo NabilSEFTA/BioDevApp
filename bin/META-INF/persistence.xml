@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="BioDevApp" transaction-type="RESOURCE_LOCAL">
+		<class>RGAlim.model.CaracAnatomique</class>
+		<class>RGAlim.model.CaracMorphologique</class>
+		<class>RGAlim.model.Ecosysteme_res_phyto</class>
+		<class>RGAlim.model.Geolocalisation</class>
+		<class>RGAlim.model.LocalisationUtilisateur</class>
+		<class>RGAlim.model.Phane</class>
+		<class>RGAlim.model.RessourceGenetique</class>
+		<class>RGAlim.model.RessourcePhytogenetique</class>
+		<class>RGAlim.model.Rgclassification</class>
+		<class>RGAlim.model.Utilisateur</class>
+		<class>RGFaune.CTA</class>
+		<class>RGFaune.CTAbean</class>
+		<class>RGFaune.RGFbean</class>
+		<class>RGFaune.RgClassificationFaune</class>
+
+		<class>RGMarines.CTAMa</class>
+		<class>RGMarines.Classification</class>
+		<class>RGMarines.EcosystemeMarine</class>
+		<class>RGMarines.LocalisationMarine</class>
+		<class>RGMarines.RessourceGenetiqueMa</class>
+		<class>RGMarines.RessourceMarine</class>
+		<class>RGMicroOrg.RessourceMicroOrg</class>
+		<class>RGMicroOrg.RgClassificationMicro</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+			
+		</properties>
+	
+	</persistence-unit>
+	<persistence-unit name="readOnly">
+		<class>RGAlim.model.Ecosysteme_res_phyto</class>
+		<class>RGAlim.model.RessourceGenetique</class>
+		<class>RGAlim.model.RessourcePhytogenetique</class>
+		<class>RGAlim.model.Rgclassification</class>
+		<class>RGAlim.model.Utilisateur</class>
+		<class>RGAlim.model.CaracAnatomique</class>
+		<class>RGAlim.model.CaracMorphologique</class>
+		<class>RGAlim.model.Geolocalisation</class>
+		<class>RGAlim.model.LocalisationUtilisateur</class>
+		<class>RGAlim.model.Phane</class>
+		<class>RGFaune.CTA</class>
+		<class>RGFaune.CTAbean</class>
+		<class>RGFaune.RGFbean</class>
+		<class>RGFaune.RgClassificationFaune</class>
+		<class>RGMarines.CTAMa</class>
+		<class>RGMarines.Classification</class>
+		<class>RGMarines.EcosystemeMarine</class>
+		<class>RGMarines.LocalisationMarine</class>
+		<class>RGMarines.RessourceGenetiqueMa</class>
+		<class>RGMarines.RessourceMarine</class>
+		<class>RGMicroOrg.RessourceMicroOrg</class>
+		<class>RGMicroOrg.RgClassificationMicro</class>
+
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+	<properties>
+		<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/RGTech" />
+            <property name="javax.persistence.jdbc.user" value="RGUser" />
+            <property name="javax.persistence.jdbc.password" value="root00" />
+        </properties>
+	</persistence-unit>
+</persistence>
