@@ -11,6 +11,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.Iterator;
 
 import javax.imageio.ImageIO;
@@ -45,9 +46,10 @@ public class Utils {
 
     }
 	
+	
 	public static void ByteToImage(byte [] bytes,File imageFile) throws IOException
 	{
-		
+		try {
 		ByteArrayInputStream bis =new ByteArrayInputStream(bytes);
 		Iterator<?> readers =ImageIO.getImageReadersByFormatName("jpeg");
 		ImageReader reader =(ImageReader) readers.next();
@@ -63,26 +65,48 @@ public class Utils {
 		//System.out.println(imageFile.getPath());
 
 		    }
+		catch(Exception e)
+		{
+			ByteArrayInputStream bis =new ByteArrayInputStream(bytes);
+			Iterator<?> readers =ImageIO.getImageReadersByFormatName("png");
+			ImageReader reader =(ImageReader) readers.next();
+			Object source = bis;
+			ImageInputStream iis =ImageIO.createImageInputStream(source);
+			reader.setInput(iis, true);
+			ImageReadParam param =reader.getDefaultReadParam();
+			Image image = reader.read(0,param);
+			BufferedImage bufferedImage= new BufferedImage(image.getWidth(null),image.getHeight(null),BufferedImage.TYPE_INT_RGB);
+			Graphics2D g2 =bufferedImage.createGraphics();
+			g2.drawImage(image, null,null);
+			ImageIO.write(bufferedImage,"png", imageFile);
+			
+		}
+	}
 	
-	   // InputStream -> File
-    public static void copyInputStreamToFile(InputStream inputStream, File file) 
-		throws IOException {
 
-        try (FileOutputStream outputStream = new FileOutputStream(file)) {
-
-            int read;
-            byte[] bytes = new byte[1024];
-
-            while ((read = inputStream.read(bytes)) != -1) 
-            {
-                outputStream.write(bytes, 0, read);
-            }
-
-			// commons-io
-            //IOUtils.copy(inputStream, outputStream);
-
-        } catch(Exception e) {}
-        }
+	public static File InputStreamToFile (InputStream fileContent,String acronyme, String path) throws IOException
+	{
+		try {
+        byte[] buffer = new byte[fileContent.available()];
+        fileContent.read(buffer);
+			 
+	    File imageFile = new File(path+"/"+acronyme+".jpeg");
+		OutputStream outStream = new FileOutputStream(imageFile);
+	    outStream.write(buffer);
+		return imageFile;
+		}
+		catch(Exception e)
+		{
+			byte[] buffer = new byte[fileContent.available()];
+	        fileContent.read(buffer);
+				 
+		    File imageFile = new File(path+"/"+acronyme+".png");
+			OutputStream outStream = new FileOutputStream(imageFile);
+		    outStream.write(buffer);
+			return imageFile;
+		}
+	}
+	
 	
 	 public static void resize(File imageFile, int height, int width) throws IOException {
 		 
@@ -97,3 +121,4 @@ public class Utils {
 	    }
 
 }
+
