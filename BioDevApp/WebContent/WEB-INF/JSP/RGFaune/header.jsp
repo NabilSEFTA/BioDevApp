@@ -120,7 +120,7 @@
             <a class="nav-link" href="InstitutionsSer">Annuaire</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="reglementation">Réglementation</a>
+            <a class="nav-link" href="/BioDevApp/reglementation">Réglementation</a>
           </li>
          
           <li class="nav-item">
