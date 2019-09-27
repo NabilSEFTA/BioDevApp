@@ -200,8 +200,8 @@
              
                   <p>Phylogénie des grands groupes actuels des Vertébrés d'après Betancur-R et al. (2017) et Heimberg et al. (2010) :</p>
 
-                  <img src="image/vertébrésphylo.jpg">
-                  <img src="image/vertébrésphylo2.jpg">
+                  <img src="image/vertébrésphylo.JPG">
+                  <img src="image/vertébrésphylo2.JPG">
 
 
                   <p>Evolution des vertébrés selon un diagramme axial représentant les cinq grandes classes (poissons18, amphibiens, reptiles, oiseaux et mammifères). La largeur des axes indique le nombre de familles dans chaque classe (les téléostéens, poissons à  squelette complètement osseux et à  nageoires rayonnantes, représentent 99,8 % des espèces de poissons, et près de la moitié des espèces de vertébrés). En classification phylogénétique, seuls les oiseaux et les mammifères sont des groupes monophylétiques.</p>
@@ -237,7 +237,7 @@
 
 
 
-
+<!--
         <div class="col-md-10 offset-md-1">
           <ul class="nav nav-pills-a nav-pills mb-3 section-t3" id="pills-tab" role="tablist">
             <li class="nav-item">
@@ -263,6 +263,7 @@
             </div>
           </div>
         </div>
+-->
         </div>
       </div>
     </div>
