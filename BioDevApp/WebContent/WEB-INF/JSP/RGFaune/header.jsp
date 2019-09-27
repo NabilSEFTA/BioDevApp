@@ -96,10 +96,10 @@
               RG
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Marine</a>
+              <a class="dropdown-item" href="StartRGMarines">Marine</a>
               <a class="dropdown-item" href="/BioDevApp/rgfaune">Faunistique</a>
-              <a class="dropdown-item" href="classifications">Phytogénétique</a>
-              <a class="dropdown-item" href="#">Micro organisme</a>
+              <a class="dropdown-item" href="/BioDevApp/classifications">Phytogénétique</a>
+              <a class="dropdown-item" href="MicroOrganismes">Micro organisme</a>
               <a class="dropdown-item" href="#">Forestière</a>
             </div>
           </li>
@@ -112,19 +112,19 @@
               <a class="dropdown-item" href="#">Marine</a>
               <a class="dropdown-item" href="/BioDevApp/ctafaune">Faunistique</a>
               <a class="dropdown-item" href="#">Phytogénétique</a>
-              <a class="dropdown-item" href="#">Micro organisme</a>
+              <a class="dropdown-item" href="CTAMicroM">Micro organisme</a>
               <a class="dropdown-item" href="#">Forestière</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Annuaire</a>
+            <a class="nav-link" href="InstitutionsSer">Annuaire</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Réglementation</a>
+            <a class="nav-link" href="reglementation">Réglementation</a>
           </li>
          
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
 
           <%@ taglib
