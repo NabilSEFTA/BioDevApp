@@ -20,6 +20,8 @@
   <link href="<%= request.getContextPath() %>/template/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
+  <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+   <link type="text/css" rel="stylesheet" href="header.css" />
   <link href="<%= request.getContextPath() %>/template/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="<%= request.getContextPath() %>/template/lib/animate/animate.min.css" rel="stylesheet">
   <link href="<%= request.getContextPath() %>/template/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
@@ -79,41 +81,77 @@
   <!--/ Form Search End /-->
 
   <!--/ Nav Star /-->
-  <nav class="navbar navbar-default navbar-expand-lg fixed-top navbar-trans">
+ <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
     <div class="container">
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <a class="navbar-brand text-brand" href="index.jsp"><span class="color-b">BIO.</span>dev</a>
-      <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-expanded="false">
+      <a class="navbar-brand text-brand" href="index.html">BIO<span class="color-b">.DEV</span></a>
+      <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none" data-toggle="collapse"
+        data-target="#navbarTogglerDemo01" aria-expanded="false">
         <span class="fa fa-search" aria-hidden="true"></span>
       </button>
       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.jsp">RG</a>
+            <a class="nav-link" href="index.html">Accueil</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              RG
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="StartRGMarines">Marine</a>
+              <a class="nav-link" href="/BioDevApp/rgfaune">Faunistique</a>
+              <a class="dropdown-item" href="/BioDevApp/classifications">Phylogénétique</a>
+              <a class="dropdown-item" href="MicroOrganismes">Micro organismes</a>
+              <a class="dropdown-item" href="agent-single.html">Forestière</a>
+            </div>
+          </li>
+           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+            CTA
+          </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="StartRGMarines">Marine</a>
+              <a class="dropdown-item" href="/BioDevApp/ctafaune">Faunistique</a>
+              <a class="dropdown-item" href="/BioDevApp/classifications">Phylogénétique</a>
+              <a class="dropdown-item" href="CTAMicroM">Micro organismes</a>
+              <a class="dropdown-item" href="agent-single.html">Forestière</a>
+            </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="institutions.jsp">CTA</a>
+            <a class="nav-link active" href="InstitutionsSer">Annuaire</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="InstitutionsSer">Annuaire</a>
+            <a class="nav-link" href="/BioDevApp/regelementation">Réglementation</a>
           </li>
+         
           <li class="nav-item">
-            <a class="nav-link active" href="institutions.jspl">Réglementation</a>
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
-          
-          <li class="nav-item">
-            <a class="nav-link" href="contact.jsp">Contact</a>
-          </li>
+           </li>
+           
         </ul>
+        
+				<!-- 	<ul >
+				<li><a href="/BioDevApp/connexion">Connexion</a></li>
+				<li><a href="/BioDevApp/inscription">S'inscrire</a></li>
+			</ul> -->
+     	
       </div>
-      <button type="button" class="btn btn-b-n navbar-toggle-box-collapse d-none d-md-block" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-expanded="false">
+ <button type="button" class="btn btn-b-n navbar-toggle-box-collapse d-none d-md-block" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-expanded="false">
         <span class="fa fa-search" aria-hidden="true"></span>
       </button>
+   
     </div>
+    
+	
   </nav>
   <!--/ Nav End /-->
 
@@ -149,13 +187,13 @@
      <div> <p style="color:red"><c:out value="${ message }"/></p></div>
      <c:forEach var="inst" items="${ insts }">
      
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div class="card-box-b card-shadow news-box">
             <div class="img-box-b">
            
            
             <c:if test = "${inst.image_inst != null}">
-              <img   src="<%= request.getContextPath() %>/BDImgs/${ inst.acronyme }.jpeg" alt="" class="img-b img-fluid image_size" >
+              <img   src="<%= request.getContextPath() %>/BDImgs/${ inst.acronyme }.jpeg" alt="" class="img-b img-fluid  image_size" >
              </c:if>
              <c:if test = "${inst.image_inst == null}">
                <img  src="<%= request.getContextPath() %>/BDImgs/standard.png" alt="" class="img-b img-fluid image_size">
@@ -191,126 +229,39 @@
         </c:forEach>
         
    </div>
-   <c:if test="${ insts.size() >9}">
-         <div class="row">
-        <div class="col-sm-12">
-          <nav class="pagination-a">
-            <ul class="pagination justify-content-end">
-              <li class="page-item disabled">
-                <a class="page-link" href="#" tabindex="-1">
-                  <span class="ion-ios-arrow-back"></span>
-                </a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">1</a>
-              </li>
-              <li class="page-item active">
-                <a class="page-link" href="#">2</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">3</a>
-              </li>
-              <li class="page-item next">
-                <a class="page-link" href="#">
-                  <span class="ion-ios-arrow-forward"></span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-      </c:if>
+  
   
     </div> 
     
   </section>
   
    <!--/ footer Star /-->
-  <section class="section-footer">
+   <section class="section-footer">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 col-md-4">
-          <div class="widget-a">
+        <div class="col-sm-12 ">
+          <div style='text-align: center' class="widget-a">
             <div class="w-header-a">
-              <h3 class="w-title-a text-brand">EstateAgency</h3>
+              <h3 class="w-title-a text-brand">RGtech</h3>
             </div>
             <div class="w-body-a">
               <p class="w-text-a color-text-a">
-                Enim minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo consequat duis
-                sed aute irure.
+                  RGtech est une équipe travaillant dans <br> le domaine
+               de la préservation  des ressources génétiques <br> en Algérie
+                conformément au protocole <br> de NAGOYA et la convention APA.
               </p>
             </div>
             <div class="w-footer-a">
               <ul class="list-unstyled">
                 <li class="color-a">
-                  <span class="color-text-a">Phone .</span> contact@example.com</li>
+                  <span class="color-text-a">Phone .</span> +213 </li>
                 <li class="color-a">
-                  <span class="color-text-a">Email .</span> +54 356 945234</li>
+                  <span class="color-text-a">Email .</span> rgtech@gmail.org</li>
               </ul>
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-4 section-md-t3">
-          <div class="widget-a">
-            <div class="w-header-a">
-              <h3 class="w-title-a text-brand">The Company</h3>
-            </div>
-            <div class="w-body-a">
-              <div class="w-body-a">
-                <ul class="list-unstyled">
-                  <li class="item-list-a">
-                    <i class="fa fa-angle-right"></i> <a href="#">Site Map</a>
-                  </li>
-                  <li class="item-list-a">
-                    <i class="fa fa-angle-right"></i> <a href="#">Legal</a>
-                  </li>
-                  <li class="item-list-a">
-                    <i class="fa fa-angle-right"></i> <a href="#">Agent Admin</a>
-                  </li>
-                  <li class="item-list-a">
-                    <i class="fa fa-angle-right"></i> <a href="#">Careers</a>
-                  </li>
-                  <li class="item-list-a">
-                    <i class="fa fa-angle-right"></i> <a href="#">Affiliate</a>
-                  </li>
-                  <li class="item-list-a">
-                    <i class="fa fa-angle-right"></i> <a href="#">Privacy Policy</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
         </div>
-        <div class="col-sm-12 col-md-4 section-md-t3">
-          <div class="widget-a">
-            <div class="w-header-a">
-              <h3 class="w-title-a text-brand">International sites</h3>
-            </div>
-            <div class="w-body-a">
-              <ul class="list-unstyled">
-                <li class="item-list-a">
-                  <i class="fa fa-angle-right"></i> <a href="#">Venezuela</a>
-                </li>
-                <li class="item-list-a">
-                  <i class="fa fa-angle-right"></i> <a href="#">China</a>
-                </li>
-                <li class="item-list-a">
-                  <i class="fa fa-angle-right"></i> <a href="#">Hong Kong</a>
-                </li>
-                <li class="item-list-a">
-                  <i class="fa fa-angle-right"></i> <a href="#">Argentina</a>
-                </li>
-                <li class="item-list-a">
-                  <i class="fa fa-angle-right"></i> <a href="#">Singapore</a>
-                </li>
-                <li class="item-list-a">
-                  <i class="fa fa-angle-right"></i> <a href="#">Philippines</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
   <footer>
@@ -320,16 +271,19 @@
           <nav class="nav-footer">
             <ul class="list-inline">
               <li class="list-inline-item">
-                <a href="#">Home</a>
+                <a href="#">Accueil</a>
               </li>
               <li class="list-inline-item">
-                <a href="#">About</a>
+                <a href="#">RG</a>
               </li>
               <li class="list-inline-item">
-                <a href="#">Property</a>
+                <a href="#">CTA</a>
               </li>
               <li class="list-inline-item">
-                <a href="#">Blog</a>
+                <a href="#">Annuaire</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Réglementation</a>
               </li>
               <li class="list-inline-item">
                 <a href="#">Contact</a>
@@ -367,18 +321,13 @@
           </div>
           <div class="copyright-footer">
             <p class="copyright color-text-a">
-              © Copyright
-              <span class="color-a">EstateAgency</span> All Rights Reserved.
+              &copy; Copyright
+              <span class="color-a">bio.DEV</span> All Rights Reserved.
             </p>
           </div>
           <div class="credits">
-            <!--
-              All the links in the footer should remain intact.
-              You can delete the links only if you purchased the pro version.
-              Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=EstateAgency
-            -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          
+            Designed by <a href="https://bootstrapmade.com/">RGtech</a>
           </div>
         </div>
       </div>
