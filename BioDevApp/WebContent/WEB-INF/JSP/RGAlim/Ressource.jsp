@@ -99,7 +99,7 @@
         <div class="row" style="margin-bottom: 5%;">
            
           <div class="col-lg-6 about-img wow fadeInLeft">
-            <img src="/BioDevApp/images/RGAlim/fraisier.jpg" style="width: 508px;">
+            <img src="/BioDevApp/images/RGAlim/Fragaria.jpg" style="width: 508px;">
           </div>
           <div class="col-lg-6 content wow fadeInRight">
             <p>
@@ -108,6 +108,7 @@
           </div>
         </div>
       </div>
+      <c:if test="isConnected">
         <section id="features">
       <div class="container">
 
@@ -167,6 +168,7 @@
       </div>
 
     </section><!-- #features --> 
+    </c:if>
       </div>
     </div>
   </div>
