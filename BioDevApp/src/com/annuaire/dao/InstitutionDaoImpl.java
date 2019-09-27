@@ -26,8 +26,8 @@ public class InstitutionDaoImpl implements  InstitutionDao
 									+ " ( id_cat_inst, acronyme,"
 								    + "nom_inst,description_inst,mail_inst,"
 								    + "tel_inst, fax_inst, adresse_inst,lien_site, image_inst) VALUES (?,?,?,?,?,?,?,?,?,?)";
-	private static final String SQL_SELECT_PAR_NOM = "SELECT * FROM \"RG\".institution where nom_inst=?;";
-	private static final String SQL_SELECT_PAR_ACRO = "SELECT * FROM \"RG\".institution where acronyme=?;";
+	private static final String SQL_SELECT_PAR_NOM = "SELECT * FROM \"RG\".institution where UPPER(nom_inst)=UPPER(?);";
+	private static final String SQL_SELECT_PAR_ACRO = "SELECT * FROM \"RG\".institution where UPPER(acronyme)=UPPER(?);";
 	private static final String SQL_SELECT_PAR_CAT = "SELECT * FROM \"RG\".institution where id_cat_inst=?";
 	
 	private static final String SQL_SELECT_PAR_ID = "SELECT * FROM \"RG\".institution where id_inst=?;";
