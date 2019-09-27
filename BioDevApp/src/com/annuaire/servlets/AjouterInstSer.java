@@ -1,6 +1,7 @@
 package com.annuaire.servlets;
 
 import java.io.ByteArrayOutputStream;
+import javax.persistence.EntityManager;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -11,6 +12,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import javax.servlet.http.Part;
 
 import org.apache.tomcat.util.http.fileupload.FileUploadException;
@@ -20,6 +22,10 @@ import com.annuaire.dao.CategorieInstitutionDao;
 import com.annuaire.dao.DAOFactory;
 import com.annuaire.dao.InstitutionDao;
 import com.annuaire.dao.Utils;
+import RGAlim.ConnexionSimpleUser;
+import RGAlim.model.Utilisateur;
+import RGAlim.users.UtilisateurDAOImpSimple;
+import RGAlim.users.inscriptionFormUser;
 
 /**
  * Servlet implementation class AjouterInstSer
@@ -31,7 +37,7 @@ maxRequestSize = 1024 * 1024 * 5 * 5)
 
 public class AjouterInstSer extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	
+	 private EntityManager em;
 
 	//public static final String SESSION_CLIENTS = "cs";
 	public static final String VUE = "/WEB-INF/ajouterInst.jsp";
@@ -43,7 +49,8 @@ public class AjouterInstSer extends HttpServlet {
        
 
 	  public void init() throws ServletException {
-	    	 
+		    em = ConnexionSimpleUser.getEntityManager(); 
+	    	System.out.println(em); 
 	        DAOFactory daoFactory = DAOFactory.getInstance();
 	        this.categorieInstitutionDao = daoFactory.getCategorieInstitutionDao();
 	        this.institutionDao = daoFactory.getInstitutionDao();
@@ -62,8 +69,17 @@ public class AjouterInstSer extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
 	{
-		/* À la réception d'une requête GET, simple affichage du formulaire */
+		
+		HttpSession session = request.getSession();
+		String id = session.getId();
+		boolean isConnected = false;
+		if (session.getAttribute(id)==null) {response.sendRedirect("/BioDevApp/connexion");}
+		else
+		{
+		Utilisateur user = (Utilisateur) session.getAttribute(id);
+		request.setAttribute("utilisateur",user );
 		this.getServletContext().getRequestDispatcher( VUE).forward( request, response );
+		}
 
 	}
 
@@ -132,7 +148,5 @@ public class AjouterInstSer extends HttpServlet {
 
 			
 	}
-
-
 
 
