@@ -114,7 +114,7 @@
                     </li>
                     <li class="d-flex justify-content-between">
                       <strong>Nom arabe:</strong>
-                      <span></span>
+                      <span>الحلقيات</span>
                      
                     </li>
                     <li class="d-flex justify-content-between">
@@ -200,16 +200,16 @@
               <div class="amenities-list color-text-a">
              
                   <p>
-                  	Les annélides sont métamérisés, c'est-à -dire que leur corps est constitué d'une succession de segments. Ces segments peuvent àªtre identiques, on parle alors de métamérie homonome ou différents, on parle de métamérie hétéronome. Trois segments ne sont pas considérés comme des métamères (car ils ne possèdent pas de sacs coelomiques), il s'agit du premier (appelé prostomium (en)), du second (peristomium (en)) et du dernier (pygidium). Le prostomium porte les organes sensoriels, le péristomium porte la bouche et le pygidum, l'anus. Les seuls annélides à  ne pas àªtre segmentés sont les échiuriens et les sipunculiens.
+                  	Les annélides sont métamérisés, c'est-à -dire que leur corps est constitué d'une succession de segments. Ces segments peuvent être identiques, on parle alors de métamérie homonome ou différents, on parle de métamérie hétéronome. Trois segments ne sont pas considérés comme des métamères (car ils ne possèdent pas de sacs coelomiques), il s'agit du premier (appelé prostomium (en)), du second (peristomium (en)) et du dernier (pygidium). Le prostomium porte les organes sensoriels, le péristomium porte la bouche et le pygidum, l'anus. Les seuls annélides à  ne pas àªtre segmentés sont les échiuriens et les sipunculiens.
 
-					Chaque métamère est composé de deux sacs cÅlomiques remplis de liquide. Ces cavités jouent le rà´le de squelette hydrostatique, protégeant les organes internes des chocs. Elles servent également au transport des hormones, ainsi que des gamètes chez certaines espèces.
+					Chaque métamère est composé de deux sacs coelomiques remplis de liquide. Ces cavités jouent le rà´le de squelette hydrostatique, protégeant les organes internes des chocs. Elles servent également au transport des hormones, ainsi que des gamètes chez certaines espèces.
 
-					Des métanéphridies permettent l'excrétion des déchets azotés (urée). Elles sont constituées d'une ouverture en entonnoir dans le sac cÅlomique (appelée néphrostome), qui se prolonge en un tube et débouche sur un néphridiopore. Ces néphridies sont métamérisées, le néphrostome se trouve dans un segment n et le néphridiopore dans le segment n+1.
+					Des métanéphridies permettent l'excrétion des déchets azotés (urée). Elles sont constituées d'une ouverture en entonnoir dans le sac coelomique (appelée néphrostome), qui se prolonge en un tube et débouche sur un néphridiopore. Ces néphridies sont métamérisées, le néphrostome se trouve dans un segment n et le néphridiopore dans le segment n+1.
 
 
-					Tous les organes des annélides sont métamérisés sauf ceux issus de l'endoderme, il s'agit du tube digestif et des vaisseaux sanguins. Le tube digestif est néanmoins séparé en plusieurs parties, la cavité buccale, le pharynx, le jabot, le gésier et l'intestin. Chez les clitellates, la partie supérieure de l'intestin est replié sur elle-màªme, formant une gouttière. Ce repli permet d'augmenter la surface d'échange entre l'intestin et les vaisseaux sanguins, il est appelé typhlosolis.
+					Tous les organes des annélides sont métamérisés sauf ceux issus de l'endoderme, il s'agit du tube digestif et des vaisseaux sanguins. Le tube digestif est néanmoins séparé en plusieurs parties, la cavité buccale, le pharynx, le jabot, le gésier et l'intestin. Chez les clitellates, la partie supérieure de l'intestin est replié sur elle-même, formant une gouttière. Ce repli permet d'augmenter la surface d'échange entre l'intestin et les vaisseaux sanguins, il est appelé typhlosolis.
 
-					Le système circulatoire est fermé, le sang ne s'étend pas librement entre les tissus mais progresse dans des vaisseaux et des artères. Les deux vaisseaux principaux sont le vaisseau sanguin ventral et le vaisseau sanguin dorsal. Ces deux vaisseaux sont reliés à  l'avant du corps par des vaisseaux sanguins contractiles, les Â« cÅurs latéraux Â». Le sang des annélides est rouge, ce qui est dà» à  la présence d'hémoglobine. Celle-ci n'est pas contenue dans des globules rouges comme chez les mammifères mais circule librement dans le sang.
+					Le système circulatoire est fermé, le sang ne s'étend pas librement entre les tissus mais progresse dans des vaisseaux et des artères. Les deux vaisseaux principaux sont le vaisseau sanguin ventral et le vaisseau sanguin dorsal. Ces deux vaisseaux sont reliés à  l'avant du corps par des vaisseaux sanguins contractiles, les « coeurs latéraux ». Le sang des annélides est rouge, ce qui est dû à  la présence d'hémoglobine. Celle-ci n'est pas contenue dans des globules rouges comme chez les mammifères mais circule librement dans le sang.
 
 					Les annélides possèdent un système nerveux ventral, ils sont dits hyponeuriens.
 
