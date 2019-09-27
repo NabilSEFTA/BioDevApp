@@ -32,9 +32,11 @@ public class RessourceGenetiqueF implements Serializable{
 	@Column
 	private String nom_amazigh;
 	
-	@Column
-	private String nom_français;
+	@Column (name ="\"nom_francais\"")
+	private String nomFrancais;
 	
+
+
 	@Column
 	private String description;
 	
@@ -90,12 +92,12 @@ public class RessourceGenetiqueF implements Serializable{
 		this.nom_amazigh = nom_amazigh;
 	}
 
-	public String getNom_francais() {
-		return nom_français;
+	public String getNomFrancais() {
+		return nomFrancais;
 	}
 
-	public void setNom_francais(String nom_francais) {
-		this.nom_français = nom_francais;
+	public void setNomFrancais(String nomFrancais) {
+		this.nomFrancais = nomFrancais;
 	}
 
 	public String getDescription() {
