@@ -41,6 +41,7 @@ public class InstitutionsSer extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		 List<Institution> insts = new ArrayList<Institution>();
 		 String path= getServletContext().getRealPath("/BDImgs");
+		
     	 insts = institutionDao.listerInst(path);
      	 request.setAttribute("insts",insts);
 
