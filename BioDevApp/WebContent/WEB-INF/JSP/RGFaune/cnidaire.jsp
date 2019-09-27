@@ -102,7 +102,7 @@
                     </li>
                     <li class="d-flex justify-content-between">
                       <strong>Nom arabe:</strong>
-                      <span></span>
+                      <span>القراصات</span>
                     </li>
                     <li class="d-flex justify-content-between">
                       <strong>Localisation:</strong>
@@ -133,9 +133,9 @@
                 <p class="description color-text-a">
               Les cnidaires (embranchement des Cnidaria) constituent un groupe d'espèces animales relativement simples, spécifiques du milieu aquatique (marins à  99 %, 1 % de dulcicoles seulement), regroupant notamment les anémones de mer, les méduses et les coraux.
 
-              L'appellation vient du grec ancien ÎºÎ½Î¯Î´Î· (knidÄ, Â« ortie, urticant Â») faisant allusion aux cellules urticantes caractéristiques de ces animaux (les cnidocytes ou cnidoblastes), le nom vernaculaire d'Â« orties de mer Â» étant donné par Aristote qui y regroupe les Acalèphes (méduses) et les Coralliaires. Les zoologistes ont ainsi donné le nom de cet embranchement en hommage à  Aristote.
+              L'appellation vient du grec ancien ÎºÎ½Î¯Î´Î· (knidé, « ortie, urticant ») faisant allusion aux cellules urticantes caractéristiques de ces animaux (les cnidocytes ou cnidoblastes), le nom vernaculaire d'« orties de mer » étant donné par Aristote qui y regroupe les Acalèphes (méduses) et les Coralliaires. Les zoologistes ont ainsi donné le nom de cet embranchement en hommage à  Aristote.
 
-              Le terme de cÅlentérés (Coelenterata ou Coelentera) désignait autrefois ce groupe mais inclut aussi l'embranchement voisin des cténophores. Les cnidaires sont bien représentés dans les fossiles : on les trouve jusque dans le cambrien et peut-àªtre màªme dès la faune d'Ediacara.
+              Le terme de coelentérés (Coelenterata ou Coelentera) désignait autrefois ce groupe mais inclut aussi l'embranchement voisin des cténophores. Les cnidaires sont bien représentés dans les fossiles : on les trouve jusque dans le cambrien et peut-être même dès la faune d'Ediacara.
 
               Les cnidaires existent sous deux formes : les formes fixées ou polypes (corail, anémone de mer) et les formes libres et mobiles (méduses). Il y a plus de 10 000 espèces reconnues.
                 </p>
@@ -145,7 +145,7 @@
                 <p class="description color-text-a no-margin">
                  Le corps des cnidaires se présente en un simple sac entourant une cavité gastrique qui s'ouvre vers l'extérieur par un pore unique qui a fonction de bouche et d'anus, entouré de tentacules (parfois régressés). Les formes polypes et méduses obéissent donc fondamentalement au màªme plan d'organisation, l'Â« ombrelle Â» des méduses correspondant au Â« pied Â» des formes fixées - il existe màªme des formes intermédiaires, comme les Staurozoa (méduses revenues à  une vie fixe).
 
-                  Le corps des cnidaires est organisé autour d'une symétrie radiale d'ordre pair (4 ou 6, ce qui détermine notamment le nombre des tentacules) : ils ressemblent donc à  des Â« soleils Â» entourés de rayons. Chez certains anthozoaires, une symétrie biradiale s'ajoute secondairement à  la symétrie radiaire. L'adulte est peu différent du stade embryonnaire.
+                  Le corps des cnidaires est organisé autour d'une symétrie radiale d'ordre pair (4 ou 6, ce qui détermine notamment le nombre des tentacules) : ils ressemblent donc à  des « soleils » entourés de rayons. Chez certains anthozoaires, une symétrie biradiale s'ajoute secondairement à  la symétrie radiaire. L'adulte est peu différent du stade embryonnaire.
 
                   Chez de nombreuses espèces (notamment le corail et de nombreux hydrozoaires), les polypes vivent en colonies qui rassemblent de très nombreux individus minuscules, connectés entre eux et pouvant sécréter un exosquelette calcaire très dur.
                 </p>
@@ -188,7 +188,7 @@
 
 
 
-                  <p>  Les cnidaires sont des organismes diploblastiques c'est-à -dire qu'ils sont formés à  partir de deux feuillets cellulaires embryonnaires seulement, l'endoderme et l'ectoderme (contrairement aux triploblastiques, qui en ont trois). Il peut y avoir entre ces deux feuillets une matrice, la mésoglée ou le mésenchyme selon le cas, qui ne constitue pas un véritable tissu cellulaire puisqu'il ne contient aucun organe différencié, mais oà¹ il existe un système nerveux relié aux cnidocytes (deux plexus nerveux, un sous-ectodermique et un sous-endodermique).
+                  <p>  Les cnidaires sont des organismes diploblastiques c'est-à -dire qu'ils sont formés à  partir de deux feuillets cellulaires embryonnaires seulement, l'endoderme et l'ectoderme (contrairement aux triploblastiques, qui en ont trois). Il peut y avoir entre ces deux feuillets une matrice, la mésoglée ou le mésenchyme selon le cas, qui ne constitue pas un véritable tissu cellulaire puisqu'il ne contient aucun organe différencié, mais oû il existe un système nerveux relié aux cnidocytes (deux plexus nerveux, un sous-ectodermique et un sous-endodermique).
                   
                   Le système nerveux, dérivé de l'ectoderme, est constitué d'un plexus, sans formation de ganglion ni de cerveau.
 
@@ -198,13 +198,13 @@
                 <ul class="list-a no-margin">
                 <li>Les plus nombreuses sont les cellules myoépithéliales ectodermiques, disposées de faà§on longitudinale. Elles possèdent des fibres de muscles lisses en faisceau (myonèmes) de myosine qui permettent l'étirement et donc la rétractation. Ces cellules contiennent également des granules de sécrétion du mucus qui protège l'organisme.</li>
 
-                <li>Les cellules sensorielles, qui, reliées à  des fibres et cellules nerveuses, entraà®nent le déploiement du harpon des cellules urticantes (mouvement le plus rapide du règne animal).</li>
+                <li>Les cellules sensorielles, qui, reliées à  des fibres et cellules nerveuses, entranent le déploiement du harpon des cellules urticantes (mouvement le plus rapide du règne animal).</li>
 
-                <li>Les cellules interstitielles, isolées ou en amas. Généralement situées à  la base des cellules myoépithéliales, elles restent à  l'état de pluripotence et servent à  remplacer des cellules mortes ou abà®mées et sont aussi à  l'origine des cellules germinales ou gonocytes.</li>
+                <li>Les cellules interstitielles, isolées ou en amas. Généralement situées à  la base des cellules myoépithéliales, elles restent à  l'état de pluripotence et servent à  remplacer des cellules mortes ou abîmées et sont aussi à  l'origine des cellules germinales ou gonocytes.</li>
 
                 <li>Les cnidocytes, cellules urticantes en forme de crochets. Elles contiennent une vésicule dérivée de l'appareil de Golgi remplie de poison. Le contenu de cette vésicule (actinogestine) est expulsé vers l'extérieur avec un harpon urticant lorsque le cnidocil (une expansion sensorielle excitable de la cellule) est touché. La cellule meurt après cette action.</li>
 
-                <li>àventuellement les cellules nerveuses, bien qu'elles ne soient pas inféodées à  un tissu.</li>
+                <li>éventuellement les cellules nerveuses, bien qu'elles ne soient pas inféodées à  un tissu.</li>
               </ul>
                
                <p> Le feuillet interne ou endoderme, d'origine endodermique, aussi appelé gastroderme (lieu de la digestion) joue un rà´le digestif ; il se compose des 4 types de cellules suivants :
@@ -284,8 +284,8 @@
              
                   <p>Presque tous les cnidaires vivent en milieu marin mais les hydres sont rencontrées dans les eaux marines et dans les eaux douces selon les espèces.
 
-                  Les cnidaires vivent très souvent en association symbiotique. Il s'agit souvent dâune endosymbiose avec des dinoflagellés du genre Symbiodinium appelés zooxanthelles. En absorbant le CO2 produit par le cnidaire, les algues utilisent lâénergie solaire par photosynthèse pour produire des glucides que le cnidaire utilise comme source de nutriments. Les zooxanthelles apportent une grande quantité dâénergie aux cnidaires. Elles favorisent par exemple la précipitation du carbonate de calcium et lâélaboration du squelette constituant les récifs coralliens. En contrepartie, le cnidaire offre une protection à  son endosymbiote.
-                  La relation entre lâanémone de mer et le poisson clown est un exemple d'association de type mutualisme. Un mucus protecteur sur le corps du poisson lui permet de tolérer le venin produit par lâanémone. Le poisson trouve un abri au sein de lâanémone. En contrepartie le poisson clown peut servir de leurre pour attirer des proies vers lâanémone. Il peut aussi défendre son anémone contre des attaques de certains prédateurs pouvant brouter lâanémone.</p>
+                  Les cnidaires vivent très souvent en association symbiotique. Il s'agit souvent d'une endosymbiose avec des dinoflagellés du genre Symbiodinium appelés zooxanthelles. En absorbant le CO2 produit par le cnidaire, les algues utilisent l'énergie solaire par photosynthèse pour produire des glucides que le cnidaire utilise comme source de nutriments. Les zooxanthelles apportent une grande quantité d'énergie aux cnidaires. Elles favorisent par exemple la précipitation du carbonate de calcium et l'élaboration du squelette constituant les récifs coralliens. En contrepartie, le cnidaire offre une protection à  son endosymbiote.
+                  La relation entre l'anémone de mer et le poisson clown est un exemple d'association de type mutualisme. Un mucus protecteur sur le corps du poisson lui permet de tolérer le venin produit par l'anémone. Le poisson trouve un abri au sein de l'anémone. En contrepartie le poisson clown peut servir de leurre pour attirer des proies vers l'anémone. Il peut aussi défendre son anémone contre des attaques de certains prédateurs pouvant brouter l'anémone.</p>
                  
               </div>
 
@@ -306,7 +306,7 @@
              
                   <p>La phylogénie des cnidaires reste un sujet de recherche ouvert. Marques & Collins 2004, proposent pour les médusozoaires la phylogénie suivante :</p>
                
-               <img src="image/phylogénie-cnidaire.jpg">  
+               <img src="image/phylogénie-cnidaire.JPG">  
               </div>
 
 
