@@ -102,7 +102,7 @@
                     </li>
                     <li class="d-flex justify-content-between">
                       <strong>Nom arabe:</strong>
-                      <span></span>
+                      <span>الفقاريات</span>
                     </li>
                     <li class="d-flex justify-content-between">
                       <strong>Localisation:</strong>
@@ -146,12 +146,12 @@
 
                   <ul>
                     <li>la présence de 5 vésicules céphaliques lors de la formation de l'encéphale.</li>
-                    <li>lla présence de cràªtes neurales</li>
+                    <li>la présence de crêtes neurales</li>
                    
 					
                   </ul>
 
-                Les plus anciens fossiles connus sont datés du Cambrien, il y a 530 millions d'années : les plus anciens fossiles seraient Haikouichthys ercaicunensis et Myllokunmingia, chronologiquement précédés par des céphalochordés (Chordés non vertébrés) comme Pikaia gracilens. Au Cambrien moyen, un organisme de transition comme Metaspriggina est emblématique de l'espèce avec un pré-pharynx, sans doute à  l'origine des mà¢choires. La répartition actuelle est mondiale et concerne tous les habitats ; le groupe contient de l'ordre de 50 000 espèces, de taille extràªmement variée, allant de la gigantesque baleine bleue (30 m, pour un poids avoisinant les 190 tonnes), jusqu'à  la minuscule grenouille Paedophryne amauensis (taille moyenne de 7 mm, poids de 0,02 gramme), les groupes les plus importants (en nombre) étant les actinoptérygiens (poissons à  nageoires rayonnées, 23 000 espèces) et les sauropsides (Â« reptiles Â» et oiseaux, 17 000 espèces).
+                Les plus anciens fossiles connus sont datés du Cambrien, il y a 530 millions d'années : les plus anciens fossiles seraient Haikouichthys ercaicunensis et Myllokunmingia, chronologiquement précédés par des céphalochordés (Chordés non vertébrés) comme Pikaia gracilens. Au Cambrien moyen, un organisme de transition comme Metaspriggina est emblématique de l'espèce avec un pré-pharynx, sans doute à  l'origine des mâchoires. La répartition actuelle est mondiale et concerne tous les habitats ; le groupe contient de l'ordre de 50 000 espèces, de taille extrêmement variée, allant de la gigantesque baleine bleue (30 m, pour un poids avoisinant les 190 tonnes), jusqu'à  la minuscule grenouille Paedophryne amauensis (taille moyenne de 7 mm, poids de 0,02 gramme), les groupes les plus importants (en nombre) étant les actinoptérygiens (poissons à  nageoires rayonnées, 23 000 espèces) et les sauropsides (« reptiles » et oiseaux, 17 000 espèces).
 
                 
                 </p>
