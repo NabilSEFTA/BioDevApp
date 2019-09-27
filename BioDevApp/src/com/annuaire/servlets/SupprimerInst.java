@@ -1,6 +1,7 @@
 package com.annuaire.servlets;
 
 import java.io.IOException;
+import javax.persistence.EntityManager;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,6 +12,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.annuaire.beans.Institution;
 import com.annuaire.dao.CategorieInstitutionDao;
@@ -18,13 +20,17 @@ import com.annuaire.dao.DAOException;
 import com.annuaire.dao.DAOFactory;
 import com.annuaire.dao.InstitutionDao;
 
+import RGAlim.ConnexionSimpleUser;
+import RGAlim.model.Utilisateur;
+import RGAlim.users.UtilisateurDAOImpSimple;
+import RGAlim.users.inscriptionFormUser;
 /**
  * Servlet implementation class SupprimerInst
  */
 @WebServlet("/SupprimerInst")
 public class SupprimerInst extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	
+	 private EntityManager em;
 	public static final String CONF_DAO_FACTORY = "daofactory";
 	public static final String VUE="/WEB-INF/institutions.jsp";
     private CategorieInstitutionDao categorieInstitutionDao;
@@ -33,7 +39,8 @@ public class SupprimerInst extends HttpServlet {
        
 
 	  public void init() throws ServletException {
-	    	 
+		    em = ConnexionSimpleUser.getEntityManager(); 
+	    	System.out.println(em); 
 	        DAOFactory daoFactory = DAOFactory.getInstance();
 	        this.categorieInstitutionDao = daoFactory.getCategorieInstitutionDao();
 	        this.institutionDao = daoFactory.getInstitutionDao();
@@ -52,6 +59,16 @@ public class SupprimerInst extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+
+		HttpSession session = request.getSession();
+		String id = session.getId();
+		boolean isConnected = false;
+		if (session.getAttribute(id)==null) {response.sendRedirect("/BioDevApp/connexion");}
+		else
+		{
+		Utilisateur user = (Utilisateur) session.getAttribute(id);
+
 		Institution inst = new Institution();
 	    int paramIdInst =Integer.parseInt(request.getParameter("id_inst"));
 		try 
@@ -65,13 +82,9 @@ public class SupprimerInst extends HttpServlet {
         	
         }
 		 response.sendRedirect("InstitutionsSer");
-		/*ServletContext servletContext = getServletContext();
-		RequestDispatcher requestDispatcher = servletContext.getRequestDispatcher("/InstitutionsSer");
-		requestDispatcher.forward(request, response);
-		/* List<Institution> insts = new ArrayList<Institution>(); 
-		insts = institutionDao.listerInst();
-		 request.setAttribute("insts",insts);
-		  this.getServletContext().getRequestDispatcher(VUE).forward( request, response );*/
+		 
+		}
+	
 		
     	
      	
@@ -86,3 +99,4 @@ public class SupprimerInst extends HttpServlet {
 	}
 
 }
+
