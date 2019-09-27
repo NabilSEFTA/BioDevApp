@@ -102,7 +102,7 @@
                     </li>
                     <li class="d-flex justify-content-between">
                       <strong>Nom arabe:</strong>
-                      <span></span>
+                      <spanالمفصليات></span>
                     </li>
                     <li class="d-flex justify-content-between">
                       <strong>Localisation:</strong>
@@ -131,7 +131,7 @@
               </div>
               <div class="property-description">
                 <p class="description color-text-a">
-               Les Arthropodes (Arthropoda1) â du grec arthron Â« articulation Â» et podos Â« pied Â», aussi appelés Â« articulés Â» â sont un embranchement d'animaux protostomiens dont le plan d'organisation est caractérisé par un corps segmenté. Ils sont formés de métamères hétéronomes munis chacun d'une paire d'appendices articulés et recouvert d'une cuticule ou d'une carapace rigide, qui constitue leur exosquelette, dans la plupart des cas constitué de chitine. Leur mue permet, en changeant périodiquement leur squelette externe, de grandir en taille (mue de croissance) ou d'acquérir de nouveaux organes, voire de changer de forme (mue de métamorphose). Ils seraient apparus il y a 543 millions d'années (543 Ma).
+               Les Arthropodes (Arthropoda) du grec arthron « articulation » et podos « pied », aussi appelés « articulés »  sont un embranchement d'animaux protostomiens dont le plan d'organisation est caractérisé par un corps segmenté. Ils sont formés de métamères hétéronomes munis chacun d'une paire d'appendices articulés et recouvert d'une cuticule ou d'une carapace rigide, qui constitue leur exosquelette, dans la plupart des cas constitué de chitine. Leur mue permet, en changeant périodiquement leur squelette externe, de grandir en taille (mue de croissance) ou d'acquérir de nouveaux organes, voire de changer de forme (mue de métamorphose). Ils seraient apparus il y a 543 millions d'années (543 Ma).
 
                 L'embranchement des arthropodes est de très loin celui qui possède le plus d'espèces et le plus d'individus de tout le règne animal et des eucaryotes (80 % des espèces connues), tels les Myriapodes, crustacés, arachnides, insectes, etc. On compte plus d'un million et demi d'espèces actuelles d'arthropodes qui présentent des modes de vie (guildes écologiques) les plus variés possibles grà¢ce notamment à  leur tagmatisation. Les membres de ce taxon sont aussi extràªmement nombreux : ils sont principalement représentés par les insectes dont 1019 (10 milliards de milliards) d'individus seraient vivants en màªme temps à  un instant donné selon des estimations2. Les arthropodes forment un groupe cosmopolite qui s'est adapté dans des environnements naturels (déserts, foràªts, abysses, montagnes, etc.) ou dâorigine anthropique (habitations, puits de pétrole, etc.) et sont parmi les premiers animaux à  avoir colonisé la terre ferme3.
 
@@ -163,16 +163,16 @@
                 </div>
               </div>
               <div class="amenities-list color-text-a">
-                  <p>  La chitine (du grec chiton ÏÎ¹ÏÏÎ½ signifiant Â« tunique Â») est une substance azotée sécrétée par l'ectoderme. D'abord mince et flexible, elle s'épaissit en une carapace résistante, qui revàªt non seulement l'extérieur du corps, mais aussi les parties antérieures et postérieures du tube digestif. 
+                  <p>  La chitine (du grec chiton ÏÎ¹ÏÏÎ½ signifiant « tunique ») est une substance azotée sécrétée par l'ectoderme. D'abord mince et flexible, elle s'épaissit en une carapace résistante, qui revàªt non seulement l'extérieur du corps, mais aussi les parties antérieures et postérieures du tube digestif. 
 
                    On considère la chitine comme le caractère des arthropodes dominant auquel sont subordonnés les caractères suivants:</p>
 
                 <ul class="list-a no-margin">
                 <li>Membranes articulaires. Si une carapace d'une seule pièce est admissible chez les némathelminthes, animaux parasites et peu mobiles, elle est inconciliable avec la mobilité des arthropodes. Aussi est-elle interrompue, à  la limite des anneaux successifs, par des membranes articulaires flexibles. </li>
-                <li>Appendices articulés. De màªme, les appendices, sous peine d'àªtre des baguettes rigides et sans fonction, doivent àªtre formés de segments articulés. De là  vient le nom des arthropodes (du grec arthron, articulation, et podos, pied). </li>
+                <li>Appendices articulés. De même, les appendices, sous peine d'être des baguettes rigides et sans fonction, doivent àªtre formés de segments articulés. De là  vient le nom des arthropodes (du grec arthron, articulation, et podos, pied). </li>
                 <li>Absence de cils vibratiles. </li>
                 <li>Muscles spécialisés. Des muscles qui uniraient un point à  un autre d'un màªme segment rigide ne serviraient à  rien. Il n'y a donc pas, chez les arthropodes, une couche musculaire continue comme chez les vers, mais des muscles spécialisés et individualisés. </li>
-                <li>Mue des arthropodes. L'accroissement du corps est gàªné par la carapace. Les arthropodes doivent donc la rejeter de temps en temps. C'est le phénomène des mues. à chaque mue, les tissus comprimés se dilatent, et l'ectoderme secrète une nouvelle chitine. Il en résulte que la croissance est discontinue, au lieu d'àªtre continue comme chez les autres espèces d'animaux. </li>
+                <li>Mue des arthropodes. L'accroissement du corps est gàªné par la carapace. Les arthropodes doivent donc la rejeter de temps en temps. C'est le phénomène des mues. A chaque mue, les tissus comprimés se dilatent, et l'ectoderme secrète une nouvelle chitine. Il en résulte que la croissance est discontinue, au lieu d'àªtre continue comme chez les autres espèces d'animaux. </li>
               </ul>
               </div>
 
@@ -191,8 +191,8 @@
                   <p>Les appendices se composent typiquement d'une base, ou protopodite, formée de deux segments qui portent chacun deux segments latéraux.
 
                     <ul>
-                  <li>Sur le segment proximal s'insèrent une gnathobase masticatrice du cà´té interne, et un épipodite respiratoire du cà´té externe.</li>
-                  <li>Sur le segment distal s'insèrent un endopodite sur le côté interne, et un exopodite sur le cà´té externe. </li>
+                  <li>Sur le segment proximal s'insèrent une gnathobase masticatrice du côté interne, et un épipodite respiratoire du côté externe.</li>
+                  <li>Sur le segment distal s'insèrent un endopodite sur le côté interne, et un exopodite sur le côté externe. </li>
                     </ul>
 
                   Ces diverses parties ne restent simples que chez les crustacés inférieurs. Chez tous les autres arthropodes, elles se complexifient et s'adaptent à  diverses fonctions. Il en résulte des appendices sensoriels (antennules, antennes), masticateurs (mandibules, maxillule, maxille, certains maxillipèdes (ou pattes-mà¢choires), certains pédipalpes), préhenseurs (certains maxillipèdes (ou pattes-mà¢choires), certains pédipalpes, pinces), locomoteurs (pattes à  partir des 5 premières paires d'appendices, nageoires à  partir des paires 11 jusqu'aux paires 16), reproducteurs (organes d'accouplement) à  partir de la 11e paire d'appendices chez le mà¢le, etc.
@@ -213,7 +213,7 @@
              
                   <p>Le système nerveux est ganglionnaire et ventral.
 
-                    Il y a toujours une paire de ganglions cérébroèdes et une paire de ganglions sous-Åsophagiens reliés par un collier périphagien. Le reste du système nerveux est en Â« échelle de corde Â» ou Â« corde à  nÅuds Â».
+                    Il y a toujours une paire de ganglions cérébroèdes et une paire de ganglions sous-Åsophagiens reliés par un collier périphagien. Le reste du système nerveux est en « échelle de corde » ou « corde à  noeuds ».
 
                     Les ganglions de chaque paire sont unis par une commissure. Les paires successives sont unies par des connectifs.
   
@@ -232,9 +232,9 @@
               </div>
               <div class="amenities-list color-text-a">
              
-                  <p>L'appareil circulatoire est un ensemble de lacunes. Il n'y a ni capillaires, ni veines. Les artères sont elles-màªmes réduites. Les vésicules cÅlomiques métamérisées ont fusionné avec le blastocÅle embryonnaire (par disparition des dissépiments, les parois entre deux segment) pour former lâhémocÅle dans lequel circule l'hémolymphe, liquide circulatoire dont le rà´le est analogue au sang et au liquide interstitiel chez les vertébrés4.
+                  <p>L'appareil circulatoire est un ensemble de lacunes. Il n'y a ni capillaires, ni veines. Les artères sont elles-mêmes réduites. Les vésicules coelomiques métamérisées ont fusionné avec le blastocoele embryonnaire (par disparition des dissépiments, les parois entre deux segment) pour former l'hémocoele dans lequel circule l'hémolymphe, liquide circulatoire dont le rêle est analogue au sang et au liquide interstitiel chez les vertébrés4.
 
-                  Le cÅur, situé dorsalement, est formé d'une ou de plusieurs poches en série linéaire et percées chacune d'une paire d'orifices ou ostioles. à chaque dilatation, le sang est aspiré à  travers les ostioles. à chaque contraction, il est chassé dans les artères.
+                  Le coeur, situé dorsalement, est formé d'une ou de plusieurs poches en série linéaire et percées chacune d'une paire d'orifices ou ostioles. A chaque dilatation, le sang est aspiré à  travers les ostioles. à chaque contraction, il est chassé dans les artères.
 
                   Le sang est incolore ou bleuté (hémocyanine), et contient seulement des globules blancs.</p>
                  
@@ -255,11 +255,11 @@
               </div>
               <div class="amenities-list color-text-a">
              
-                  <p>Les yeux sont simples (ocelles) ou composés (yeux à  facettes). Un Åil composé peut àªtre formé de plusieurs centaines d'ommatidies. Chaque ommatidie comprend:
+                  <p>Les yeux sont simples (ocelles) ou composés (yeux à  facettes). Un oeil composé peut àªtre formé de plusieurs centaines d'ommatidies. Chaque ommatidie comprend:
                   <ul>
-                  <li>Une couche de cellules cornéennes, constituant une cornée transparente (une des facettes de l'Åil).</li>
+                  <li>Une couche de cellules cornéennes, constituant une cornée transparente (une des facettes de l'oeil).</li>
                   <li> Une couche de cellules cristallines sécrétant entre elles un cristallin oblong.</li>
-                  <li>Une couche de cellules rétiniennes sécrétant entre elles des bà¢tonnets sensibles à  la lumière.</li>
+                  <li>Une couche de cellules rétiniennes sécrétant entre elles des bâtonnets sensibles à  la lumière.</li>
                   </ul>
                   Les ommatidies sont séparées les unes des autres par des cellules noires.
 
