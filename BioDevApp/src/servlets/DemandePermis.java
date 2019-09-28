@@ -18,9 +18,9 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import Connexion.ConnexionSimpleUser;
+import RGAlim.model.Utilisateur;
 import business.Permis;
-import business.Test;
-import business.User;
+
 import dao.PermisDAO;
 
 
@@ -40,8 +40,11 @@ public class DemandePermis extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		
-		  String type = request.getParameter("type"); 
+		 HttpSession session = request.getSession();
+		 String id = session.getId();
+		 Utilisateur user = (Utilisateur) session.getAttribute(id);
+		if (user==null) {response.sendRedirect("/BioDevApp/connexion");}
+		else { String type = request.getParameter("type"); 
 		  if (type == null)
 		  {request.getRequestDispatcher( "/WEB-INF/Permis/Permis.jsp" ).forward( request, response );}
 		  else {
@@ -51,7 +54,7 @@ public class DemandePermis extends HttpServlet {
 			//request.setAttribute("Operateur","");
 			System.out.println(type);
 			request.setAttribute("errorMessage","");
-			request.getRequestDispatcher( "/WEB-INF/Permis/demandePermis.jsp" ).forward( request, response );
+			request.getRequestDispatcher( "/WEB-INF/Permis/demandePermis.jsp" ).forward( request, response );}
 	
 		}
 	}
@@ -69,12 +72,13 @@ public class DemandePermis extends HttpServlet {
 		// Pour avoir son ID
 		EntityManagerFactory entityManagerFactory = null;
         EntityManager em = null;
-        Test test = new Test();
+        
 		
 		try {
-			
-        
-			request.setAttribute("UserID","User2"); // set it to sessios.userid
+			HttpSession session = request.getSession();
+			String id = session.getId();
+			Utilisateur user = (Utilisateur) session.getAttribute(id);
+			request.setAttribute("UserID",user.getCourriel()); // set it to sessios.userid
 			
 			//System.out.println((String) request.getParameter("Duree") + "HERE");
 			if (PermisDAO.addDemandePermis(request)){

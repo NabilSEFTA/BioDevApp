@@ -92,7 +92,7 @@
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
                       <div class="portfolio-wrap">
                         <figure>
-                          <img src="images/RGAlim/${rg.nomFrancais}.jpg" class="img-fluid" alt="">
+                          <img src="images/RGAlim/fraisier.jpg" class="img-fluid" alt="">
                           <a href="" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
                           <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                         </figure>

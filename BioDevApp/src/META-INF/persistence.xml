@@ -24,6 +24,12 @@
 		<class>RGMarines.RessourceMarine</class>
 		<class>RGMicroOrg.RessourceMicroOrg</class>
 		<class>RGMicroOrg.RgClassificationMicro</class>
+					<class>business.Permis</class>
+		<class>business.PermisAcces</class>
+		<class>business.PermisTransfert</class>
+		<class>business.PermisValorisation</class>
+		<class>business.PermisCirculation</class>
+		
 		<exclude-unlisted-classes>true</exclude-unlisted-classes>
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
@@ -54,8 +60,14 @@
 		<class>RGMarines.RessourceMarine</class>
 		<class>RGMicroOrg.RessourceMicroOrg</class>
 		<class>RGMicroOrg.RgClassificationMicro</class>
+					<class>business.Permis</class>
+		<class>business.PermisAcces</class>
+		<class>business.PermisTransfert</class>
+		<class>business.PermisValorisation</class>
+		<class>business.PermisCirculation</class>
 
 		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+
 	<properties>
 		<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
             <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/RGTech" />
@@ -63,4 +75,25 @@
             <property name="javax.persistence.jdbc.password" value="root00" />
         </properties>
 	</persistence-unit>
+		<!-- <persistence-unit name="read">
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+			<class>business.Permis</class>
+		<class>business.PermisAcces</class>
+		<class>business.PermisTransfert</class>
+		<class>business.PermisValorisation</class>
+		<class>business.PermisCirculation</class>
+		   
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost/RGTech" />
+            <property name="javax.persistence.jdbc.user" value="RGAdmin" />
+            <property name="javax.persistence.jdbc.password" value="root00" />
+            
+            
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.format_sql" value="true" /> 
+        
+        </properties>
+		</persistence-unit> -->
 </persistence>

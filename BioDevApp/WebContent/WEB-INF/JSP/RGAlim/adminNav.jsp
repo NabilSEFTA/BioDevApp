@@ -45,6 +45,21 @@
           </div>
         </div>
       </li>
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item active">
+        <a class="nav-link" href="dashboard"  data-toggle="collapse" data-target="#collapseUtilities5">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Gestion de permis</span></a>
+        <div id="collapseUtilities5" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Permis</h6>
+            <a class="collapse-item" href="/BioDevApp/gestiondemandes" >Afficher les Permis</a>
+            
+          </div>
+        </div>
+      </li>
       <!-- Divider -->
       <hr class="sidebar-divider">
       <li class="nav-item active">
@@ -74,7 +89,7 @@
       </li>
       <hr class="sidebar-divider">
       <li class="nav-item active">
-        <a class="nav-link" href="deconnexionAdmin">
+        <a class="nav-link" href="/BioDevApp/deconnexionAdmin">
           <span>Déconnexion</span></a>
       </li>
       <hr class="sidebar-divider">

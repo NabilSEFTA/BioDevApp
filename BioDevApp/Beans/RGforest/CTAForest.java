@@ -11,11 +11,11 @@ import javax.persistence.NamedQuery;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
-@Entity(name ="CTA")
+@Entity(name ="CTAForest")
 @Table(name="\"RG\".\"CTA\"")
 
-@NamedQuery(name="CTA.find", query="SELECT u FROM CTA u WHERE  u.id = :id_CTA AND u.validee = true")
-@NamedQuery(name="CTAProposes.find", query="SELECT u FROM CTA u WHERE  u.validee = false")
+@NamedQuery(name="CTAForest.find", query="SELECT u FROM CTAForest u WHERE  u.id = :id_CTA AND u.validee = true")
+@NamedQuery(name="CTAForestProposes.find", query="SELECT u FROM CTAForest u WHERE  u.validee = false")
 
 public class CTAForest implements Serializable{
 private static final long serialVersionUID = 1L;

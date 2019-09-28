@@ -12,7 +12,7 @@ import javax.persistence.Table;
 @Entity(name ="RessourceGenetique")
 @Table(name="\"RG\".\"RessourceGenetique\"")
 
-@NamedQuery(name="RessourceGenetiqueF.find", query="SELECT u FROM RessourceGenetique u WHERE  u.id = :id_RessourceForestiere")
+@NamedQuery(name="RessourceGenetiqueF.find", query="SELECT u FROM RessourceGenetiqueF u WHERE  u.id = :id_RessourceForestiere")
 
 public class RessourceGenetiqueF implements Serializable{
 	
@@ -32,10 +32,9 @@ public class RessourceGenetiqueF implements Serializable{
 	@Column
 	private String nom_amazigh;
 	
-	@Column (name ="\"nom_francais\"")
-	private String nomFrancais;
+	@Column
+	private String nom_francais;
 	
-
 
 	@Column
 	private String description;
@@ -68,6 +67,15 @@ public class RessourceGenetiqueF implements Serializable{
 		return id;
 	}
 
+	
+	public String getNom_francais() {
+		return nom_francais;
+	}
+
+	public void setNom_francais(String nom_francais) {
+		this.nom_francais = nom_francais;
+	}
+
 	public String getNom_latin() {
 		return nom_latin;
 	}
@@ -92,13 +100,6 @@ public class RessourceGenetiqueF implements Serializable{
 		this.nom_amazigh = nom_amazigh;
 	}
 
-	public String getNomFrancais() {
-		return nomFrancais;
-	}
-
-	public void setNomFrancais(String nomFrancais) {
-		this.nomFrancais = nomFrancais;
-	}
 
 	public String getDescription() {
 		return description;

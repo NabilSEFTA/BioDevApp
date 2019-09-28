@@ -67,7 +67,7 @@
           </li>
          
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="demandes">Voir les demandes</a>
           </li>
            </li>
            <li class="nav-item">

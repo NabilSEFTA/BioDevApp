@@ -17,7 +17,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.Part;
 
-import Connexion.ConnexionSimpleUser;
+import dao.ConnexionSimpleUser2;
 import business.Permis;
 import business.PermisAcces;
 import business.PermisCirculation;
@@ -53,7 +53,7 @@ public class PermisDAO extends DAOContext{
 			p.setAccPrescription((String)request.getParameter("AccPrescription"));
 
 			
-			em = ConnexionSimpleUser.getEntityManager();
+			em = ConnexionSimpleUser2.getEntityManager();
 			EntityTransaction trans = em.getTransaction();
 			
 			//System.out.println("Im");
@@ -85,7 +85,7 @@ public class PermisDAO extends DAOContext{
 			p.setCirMoyTransport((String)request.getParameter("CirMoyTransport"));
 			p.setCirItineraire((String)request.getParameter("CirItineraire"));
 
-			em = ConnexionSimpleUser.getEntityManager();
+			em = ConnexionSimpleUser2.getEntityManager();
 			EntityTransaction trans = em.getTransaction();
 			
 			//System.out.println("Im");
@@ -119,7 +119,7 @@ public class PermisDAO extends DAOContext{
 			
 
 			
-			em = ConnexionSimpleUser.getEntityManager();
+			em = ConnexionSimpleUser2.getEntityManager();
 			EntityTransaction trans = em.getTransaction();
 			
 			//System.out.println("Im");
@@ -152,7 +152,7 @@ public class PermisDAO extends DAOContext{
 			p.setValDestProduit((String)request.getParameter("ValdestProduit"));
 			p.setValMarche((String)request.getParameter("Valmarche"));
 					
-			em = ConnexionSimpleUser.getEntityManager();
+			em = ConnexionSimpleUser2.getEntityManager();
 			EntityTransaction trans = em.getTransaction();
 			
 			//System.out.println("Im");
@@ -171,7 +171,7 @@ public class PermisDAO extends DAOContext{
 	
 	public static List<Permis> getListeDemandesAdmin() {
 
-			EntityManager em = ConnexionSimpleUser.getEntityManager();
+			EntityManager em = ConnexionSimpleUser2.getEntityManager();
 			
 		    //return session.createQuery("SELECT a FROM Permis a", Permis.class).getResultList(); 
 		    
@@ -180,7 +180,7 @@ public class PermisDAO extends DAOContext{
 	}
 	
 	public static void validePermis(int id) {
-		EntityManager em = ConnexionSimpleUser.getEntityManager();
+		EntityManager em = ConnexionSimpleUser2.getEntityManager();
 		
 		EntityTransaction trans = em.getTransaction();
 		//System.out.println("hereeeee");
@@ -202,7 +202,7 @@ public class PermisDAO extends DAOContext{
 	}
 	
 	public static void suspendrePermis(int id) {
-		EntityManager em = ConnexionSimpleUser.getEntityManager();
+		EntityManager em = ConnexionSimpleUser2.getEntityManager();
 		
 		EntityTransaction trans = em.getTransaction();
 		System.out.println("hereeeee");
@@ -225,7 +225,7 @@ public class PermisDAO extends DAOContext{
 	
 	public static List<Permis> getListeDemandesUser(String userId) {
 		
-		EntityManager em = ConnexionSimpleUser.getEntityManager();
+		EntityManager em = ConnexionSimpleUser2.getEntityManager();
 		
 		List<?> list = (List<?>) em.createQuery(
 			    "select p from Permis as p where  p.demandeur = ?1")
@@ -235,7 +235,7 @@ public class PermisDAO extends DAOContext{
 } 
 	
 	public static PermisCirculation getPermisCir(int id) {
-		EntityManager em = ConnexionSimpleUser.getEntityManager();
+		EntityManager em = ConnexionSimpleUser2.getEntityManager();
 		
 		List<?> list = (List<?>) em.createQuery(
 			    "select p from Permis as p where  p.id = ?1")
@@ -248,7 +248,7 @@ public class PermisDAO extends DAOContext{
 	
 	/////
 	public static PermisAcces getPermisAcc(int id) {
-		EntityManager em = ConnexionSimpleUser.getEntityManager();
+		EntityManager em = ConnexionSimpleUser2.getEntityManager();
 		
 		List<?> list = (List<?>) em.createQuery(
 			    "select p from Permis as p where  p.id = ?1")
@@ -260,7 +260,7 @@ public class PermisDAO extends DAOContext{
 	}
 	////
 	public static PermisTransfert getPermisTran(int id) {
-		EntityManager em = ConnexionSimpleUser.getEntityManager();
+		EntityManager em = ConnexionSimpleUser2.getEntityManager();
 		
 		List<?> list = (List<?>) em.createQuery(
 			    "select p from Permis as p where  p.id = ?1")
@@ -272,7 +272,7 @@ public class PermisDAO extends DAOContext{
 	}
 	/////
 	public static PermisValorisation getPermisVal(int id) {
-		EntityManager em = ConnexionSimpleUser.getEntityManager();
+		EntityManager em = ConnexionSimpleUser2.getEntityManager();
 		
 		List<?> list = (List<?>) em.createQuery(
 			    "select p from Permis as p where  p.id = ?1")

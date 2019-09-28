@@ -9,7 +9,9 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
+import RGAlim.model.Utilisateur;
 import business.Permis;
 import dao.PermisDAO;
 
@@ -32,7 +34,10 @@ public class DemandesAdmin extends HttpServlet {
 		
 		
 		
-		
+		 HttpSession session = request.getSession();
+		 String id = session.getId();
+		 String admin = (String) session.getAttribute(id);
+		 if (admin.equals("admin")) {
 		//int param2=0;
         //if (request.getParameter("param2") !=null ) {param2 = Integer.parseInt( request.getParameter("param2"));}
         if ("valide".equals((String)request.getParameter("param1"))) {
@@ -47,7 +52,12 @@ public class DemandesAdmin extends HttpServlet {
         
         
         
-		request.getRequestDispatcher( "/WEB-INF/Permis/listesDemandesAdmin.jsp" ).forward( request, response );	}
+		request.getRequestDispatcher( "/WEB-INF/Permis/listesDemandesAdmin.jsp" ).forward( request, response );}
+		 else {
+			 response.sendRedirect("/BioDevApp/connexionAdmin");
+		 } 
+	}
+
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
